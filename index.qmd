@@ -1,0 +1,11 @@
+---
+title: R-Ladies at R Dev Days
+author: Heather Turner
+affiliation: University of Warwick
+date: "2025-11-12"
+date-format: long
+footer: <https://hturner.github.io/RLadiesMelbourne2025>
+format:
+  warwickpres-revealjs: default
+---
+
