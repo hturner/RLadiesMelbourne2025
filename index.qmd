@@ -7,6 +7,8 @@ date-format: long
 footer: <https://hturner.github.io/RLadiesMelbourne2025>
 format:
   warwickpres-revealjs: default
+  html:
+    allow-html: true
 ---
 
 # Background {.lavendar-bg}
@@ -371,20 +373,15 @@ Open as [issue #68](https://github.com/r-devel/r-dev-day/issues/68) for [R Dev D
 
 ## Issues related to C code
 
-C code contributions tend to be more complex, but see Ella Kaye's [AU
-C for R users](https://youtu.be/9mQCgeZwLlc) talk for 
+C code contributions tend to be more complex, but see Ella Kaye's [C for R users](https://youtu.be/9mQCgeZwLlc) talk for 
 R-Ladies Philly for a gentle introduction:
 
-::: {.columns}
-::: {.column width="50%"}
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9mQCgeZwLlc" title="C for R users: contributing to base R" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-</iframe>  
+:::{.center-h}
+{{< video https://www.youtube-nocookie.com/embed/9mQCgeZwLlc width="400" height="300">}}
 :::
-::: {.column width="50%"}
+
 * [3-digit hex colors](https://github.com/r-devel/r-project-sprint-2023/issues/74) (R Project Sprint 2023 issue)
 * [Bug 8934 - Irregularity in stem() display](https://github.com/r-devel/r-dev-day/issues/12)
-:::
-:::
 
 # CRAN  {.blue-bg}
 
