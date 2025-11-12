@@ -9,3 +9,406 @@ format:
   warwickpres-revealjs: default
 ---
 
+# Background {.lavendar-bg}
+
+## EPSRC RSE Fellowship (2021-2026)
+
+*Sustainability & EDI in the R Project*
+
+::: {.columns}
+
+::: {.column width="35%"}
+::: {center}
+![](images/heather_turner.jpg){width=80%}
+:::
+
+:::
+
+::: {.column width="65%"}
+<br>
+💻 Contributing to the R project through code, infrastructure & outreach  
+📦 Contributing to packages on CRAN  
+🚀 Capacity-building in R and data science at Warwick University  
+💪 Community-building in the R and RSE communities with a focus on EDI
+:::
+
+:::
+
+## R Project Sprint 2023
+
+![](images/R-project-sprint.jpg)
+
+48 in person (not all pictured), 7 online.
+
+## Who came?
+
+::: {.columns}
+
+::: {.column width="25%"}
+
+<br><br><br>
+
+---- ---------
+  11 R Core
+  13 Invited
+  31 Selected
+---- ---------
+:::
+
+::: {.column width="75%"}
+![](figures/participant_map.png)
+:::
+
+:::
+
+25/40 non core developers self-identified from underrepresented groups
+
+## Activities
+
+* **Translation**: translation platform admin, documentation, message translation
+* **Documentation**: triaging and working on bug reports
+* **Bug fixes/new functionality**:
+    * **Accessibility**, e.g. logging base graphics
+    * **Low-level**, e.g. rng overhead optimization 
+    * **Packages**, e.g. improving messages sent to CRAN maintainers
+    * **Statistics**, e.g. enhancing sample.int for unequal probability sampling
+    * **Graphics**, e.g. adding support for “#RGB” colours in R (in addition to “#RRGGBB”)
+
+## Translation
+
+~2000 new/updated messages translations across 14 languages
+
+:::{.center-h}
+![](figures/translations_simpler.png){width=75%}
+:::
+## Bugs
+
+```{r, out.width = "90%"}
+#| echo: false
+#| eval: true
+#| fig-align: "center"
+knitr::include_graphics('figures/bug_review.png')
+```
+
+# Great, when are we doing this again?
+
+## R Dev Days
+
+* 1-day versions of the R Project Sprint
+* 9 events as satellites to R conferences:
+  - 2 x useR! (Austria, USA)
+  - 2 x Shiny in Production (UK)
+  - London satRdays (UK)
+  - posit::conf(2024) (USA)
+  - LatinR 2024 (online)
+  - RencontresR 2025 (France)
+  - RSECon25 (UK)
+
+## Diversity at R Dev Days
+
+:::{.columns}
+:::{.column width="35%"}
+<br>
+<br>
+
+* 47% identify as under-represented
+* R-Ladies out in force!
+:::
+:::{.column width="65%"}
+
+![](images/rladies.jpeg)
+R-Ladies at R Dev Day @ RSECon25
+:::
+:::
+
+## Upcoming Events
+
+* R Dev Day @ Australia 2025, Fri 21 Nov: [pretix.eu/r-contributors/r-dev-day-oz-25/](https://pretix.eu/r-contributors/r-dev-day-oz-25/)
+    - Melbourne, Brisbane and Perth in person
+    - Remote (close time zones best)
+    - 3 Melbourne tickets left (as of 15:00 AEDT today!)
+* R Dev Day @ NZ 2025, Tue-Wed 16-17 Dec: [pretix.eu/r-contributors/r-dev-day-nz-25/](https://pretix.eu/r-contributors/r-dev-day-nz-25/)
+    - Auckland in person
+    - Remote: Americas or Asia-Pacific
+    - Morning Stream, Afternoon Stream, or both!
+
+## What Happens at an R Dev Day
+
+* Tasks are prepared as issues on <https://github.com/r-devel/r-dev-day>
+* Prior to the event/during kick-off, people flag their interest
+* Break-out into small groups for the rest of the day
+
+:::fragment
+<br><br>
+[Remainder of talk: Examples of tasks, highlighting R-Ladies contributions!]{.col-box-lavendar}
+:::
+
+# R Contributors Infrastructure {.blue-bg}
+
+## R Contributor Assets
+
+:::{.columns}
+:::{.column width="50%"}
+<https://contributor.r-project.org>
+![](images/r-contributors-website.png){fig-alt="" width="100%"}
+:::
+:::{.column width="50%"}
+<https://contributor.r-project.org/rdevguide/>
+![](images/r-dev-guide.png){fig-alt="" width="100%"}
+:::
+:::
+
+Also the [R Dev Container](https://github.com/r-devel/r-dev-env) (containerized development environment).
+
+## Contributor Infrastructure Tasks at R Dev Days
+
+- [R Contributors website: Combine brand-light and brand-dark into one _brand.yml](https://github.com/r-devel/r-dev-day/issues/126)<br> *Clare Welsh*
+- [R Dev Guide: Document how to make a feature request](https://github.com/r-devel/r-dev-day/issues/57)<br> *Isabella Velásquez,	Lydia Gibson*
+- [Review r-devel repos for best practices](https://github.com/r-devel/r-dev-day/issues/51)<br> *Team including Ella Kaye, Simisani Ndaba, Heather Turner*
+    - List of essential and adviasable practices: [github.com/r-devel/repo-best-practices/](https://github.com/r-devel/repo-best-practices/)
+    - Implementation ongoing!
+
+# Translations {.green-bg}
+
+## R Project Weblate Instance
+
+<https://translate.rx.studio>: a user-friendly interface for contributing translations
+
+
+```{r, out.width = "90%"}
+#| echo: false
+#| eval: true
+#| fig-align: "center"
+#| fig-alt: "Screenshot of the R Project for Statistical Computing project on weblate, with per package translation coverage summaries"
+knitr::include_graphics('images/weblate_packages.png')
+```
+
+- Package R and C files: errors, messages and warnings
+- base (R GUI): text strings in the Windows GUI
+
+## Languages tab
+
+```{r, out.width = "90%"}
+#| echo: false
+#| eval: true
+#| fig-align: "center"
+#| fig-alt: "Screenshot of the language tab for the R Project for Statistical Computing project, with per language translation coverage summaries"
+knitr::include_graphics('images/weblate_languages.png')
+```
+
+<br>
+27 (written) languages, e.g., Simplified Chinese (73% translated), Indonesian (3% translated)
+
+## Translators
+
+```{r, out.width = "100%"}
+#| echo: false
+#| eval: true
+#| fig-align: "center"
+#| fig-alt: "Screenshot of users page on the R Project weblate, showing the top 20 translators by number of translations (as of 12 Nov 2025)"
+knitr::include_graphics('images/weblate_leaderboard.png')
+```
+
+:::{.columns}
+:::{.column width="60%"}
+ - Nichole Haines (1,612; DE, RU, ES, FR)
+ - Gabriela de Lima Marin (1,121; PT_BR, ES)
+:::
+:::{.column width="40%"}
+ - Paola Corrales (501; ES)
+ - Renata Hirota (499; PT_BR)
+:::
+:::
+
+::: notes
+Could mention translation hackathons here
+:::
+
+## Translation Tasks at R Dev Days
+
+ - [Explore greater use of automatic translations in Weblate](https://github.com/r-devel/r-dev-day/issues/66)<br> *Gabriela de Lima Marin*
+    - Later [documented](https://github.com/r-devel/r-dev-day/issues/81) in the 
+    R Dev Guide by *Patricia Loto and Lydia Gibson*
+ - [Review translations dashboard and propose improvements](https://github.com/r-devel/r-dev-day/issues/50)<br> *Team including 
+ Riva Quiroga, Patricia Loto,	Erika Siregar, Steph Orellana*
+ - Set up for {glossary} package ([pkgdown website](https://github.com/r-devel/r-dev-day/issues/111), [precommit](https://github.com/r-devel/r-dev-day/issues/119), [All Contributors](https://github.com/r-devel/r-dev-day/issues/120))<br> *Saranjeet Kaur, 
+ Riva Quiroga, Simisani Ndaba, Jyoti Bhoga*
+ 
+## Translations Dashboard
+
+<https://contributor.r-project.org/translations-dashboard/>
+
+:::{.columns}
+:::{.column width="50%"}
+Status of translations in R sources (R-devel)
+![](images/dashboard_r_sources.png){fig-alt="" width="100%"}
+:::
+:::{.column width="50%"}
+Status of translations on Weblate
+![](images/dashboard_weblate.png){fig-alt="" width="100%"}
+:::
+:::
+
+## Plans for Improvement
+
+* [Restructure the repository](https://github.com/r-devel/translations-dashboard/issues/49) - almost done
+* [Convert into a Quarto dashboard](https://github.com/r-devel/translations-dashboard/issues/38)
+* Extract table generation into separate R modules/functions
+* Improve data visualization to make it useful for the final users
+* [Documentation and governance](https://github.com/r-devel/translations-dashboard/issues/40) - README, CONTRIBUTORS.md, CODEOWNERS, etc
+
+:::fragment
+:::{.callout-note}
+Will be opening related issues for R Dev Day @ Australia 2025!
+:::
+:::
+
+# R Manuals {.yellow-bg}
+
+## Tasks related to R Manuals at R Dev Days
+
+R has 5 official [manuals](https://cran.r-project.org/manuals.html): R-intro, R-data, R-admin, R-exts, R-lang, R-ints
+
+* [Link R manuals from help pages](https://github.com/r-devel/r-dev-day/issues/125)<br> *Ella Kaye, Rhian Davies,	Claire Welsh*
+* [Add missing information to bibliographic entries](https://github.com/r-devel/r-dev-day/issues/116)<br> *Team including Fonti Kar, Ella Kaye*
+* [Improve the CSS for the R manuals](https://github.com/r-devel/r-dev-day/issues/26)<br> *Team including Pao Corrales, Emi Tanaka, Jayani Lakshika, Fonti Kar, Toni Price*
+
+## Improving CSS: Before
+
+![](images/manuals_before.png){fig-alt="" width="100%"}
+
+## Improving CSS: After
+
+![](images/manuals_after.png){fig-alt="" width="100%"}
+
+# R code (docs and tests)  {.coral-bg}
+
+## Bug 17835 - Removing master/slave terminology from tcltk (Code)
+
+*Team including Erin Hodgess, Ella Kaye*
+
+![](images/tcltk_code.png){fig-alt="" width="100%"}
+
+## Bug 17835 - Removing master/slave terminology from tcltk (Doc)
+
+![](images/tcltk_doc1.png){fig-alt="" width="100%"}
+![](images/tcltk_doc2.png){fig-alt="" width="100%"}
+
+## Bug 7084 - text(x, y, labels) - recycling problems
+
+*Team including Ella Kaye*
+
+`text()` recycles coordinate pairs when there are more labels than points 
+```{r}
+#| echo: false
+par(mar = c(1, 1, 0, 0))
+```
+```{r}
+#| fig.width: 3
+#| fig.height: 3.5
+par(mar = c(5, 4, 0, 0))
+plot(1:7); text(1:2, 2:4, LETTERS[1:4])
+```
+
+## Bug 7084 - text(x, y, labels) - recycling problems (Code)
+
+```r
+if (is.language(labels)) {
+    labels <- as.expression(labels)
+}
+
+if (length(labels) > (n <- length(x$x)) && n >= 1) {
+  labels <- labels[1:n]
+  warning("length(labels) > max(length(x), length(y)). labels truncated to length ", n, ".")
+}
+```
+
+## Bug 7084 - text(x, y, labels) - recycling problems (Doc)
+
+![](images/labels_doc.png){fig-alt="" width="100%"}
+
+## Bug 18674 - tools::toTitleCase() incorrectly capitalizes conjunctions
+
+*Team including Shannon Pileggi, Reiko Okamoto*
+
+In the following example "and" should not be capitalized:
+
+```{r}
+tools::toTitleCase("pre- and post estimation")
+```
+
+
+## Bug 18674 - tools::toTitleCase() incorrectly capitalizes conjunctions (Code)
+
+![](images/toTitleCase_code.png){fig-alt="" width="100%"}
+
+## Bug 18674 - tools::toTitleCase() incorrectly capitalizes conjunctions (Tests)
+
+![](images/toTitleCase_tests.png){fig-alt="" width="100%"}
+
+::: notes
+did also change Rd file, but not exercising this change
+:::
+
+## Bug 18787: Modify glyphFont() so it produces a single font description (Code)
+
+*Team including Sherry Zhang, Jayani Lakshika, Stephanie Zimmer*
+
+![](images/glyphFont_code.png){fig-alt="" width="100%"}
+
++ similar changes for `index`, `family`, `weight`, and `style` arguments
+
+## Bug 18787: Modify glyphFont() so it produces a single font description (Tests)
+
+![](images/glyphFont_tests.png){fig-alt="" width="100%"}
+
+## Bug 18787: Modify glyphFont() so it produces a single font description (TODO)
+
+- [ ] Regression test grid/tests/glyphs.R (including checks that output is unchanged, e.g., via {gdiff}).
+- [ ] Check that the changes do not break {marquee} (or change its output).
+
+Open as [issue #68](https://github.com/r-devel/r-dev-day/issues/68) for [R Dev Day @ Australia](https://github.com/orgs/r-devel/projects/5)
+
+## Issues related to C code
+
+C code contributions tend to be more complex, but see Ella Kaye's [AU
+C for R users](https://youtu.be/9mQCgeZwLlc) talk for 
+R-Ladies Philly for a gentle introduction:
+
+::: {.columns}
+::: {.column width="50%"}
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9mQCgeZwLlc" title="C for R users: contributing to base R" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>  
+:::
+::: {.column width="50%"}
+* [3-digit hex colors](https://github.com/r-devel/r-project-sprint-2023/issues/74) (R Project Sprint 2023 issue)
+* [Bug 8934 - Irregularity in stem() display](https://github.com/r-devel/r-dev-day/issues/12)
+:::
+:::
+
+# CRAN  {.blue-bg}
+
+## CRAN-related Tasks at R Dev Days
+
+[Fix lost braces NOTE on CRAN packages](https://github.com/r-devel/r-dev-day/issues/110)<br> *Team including Geraldine Gomez and Andrea Gomez Vargas*
+
+ - PRs submitted for 36 packages (some outside the R Dev Day)
+
+:::fragment
+:::{.callout-note}
+Will be open for further contribution at R Dev Day @ Australia 2025!
+:::
+:::
+
+# Summary {.lavendar-bg}
+
+## Get Involved
+
+* R Dev Day @ Australia 2025, 21 Nov: [pretix.eu/r-contributors/r-dev-day-oz-25/](https://pretix.eu/r-contributors/r-dev-day-oz-25/)
+* R Dev Day @ New Zealand 2025, 16-17 Dec: [pretix.eu/r-contributors/r-dev-day-nz-25/](https://pretix.eu/r-contributors/r-dev-day-nz-25/)
+* R Contributor Office hours
+    * Thursday 13 Nov, 21:00-22:00 AEDT
+    * Thursday 11 Dec, 14:00-15:00 or 21:00-22:00 AEDT
+* More support on [contributor.r-project.org](https://contributor.r-project.org)
+
+
